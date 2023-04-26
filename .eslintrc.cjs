@@ -20,5 +20,8 @@ module.exports = {
     'react-refresh/only-export-components': 'warn',
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 0,
+    'import/no-extraneous-dependencies': 'off',
+    'no-param-reassign ': 'off',
+    'react/button-has-type': 'off',
   },
 };

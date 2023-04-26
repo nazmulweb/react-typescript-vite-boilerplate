@@ -1,5 +1,28 @@
+/* eslint-disable react/button-has-type */
+import { useSelector, useDispatch } from 'react-redux';
+import type { RootState } from './app/store';
+import { decrement, increment } from './counterSlice';
+
 function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch = useDispatch();
+  return (
+    <div>
+      <button
+        aria-label="Increment value"
+        onClick={() => dispatch(increment())}
+      >
+        Increment
+      </button>
+      <span>{count}</span>
+      <button
+        aria-label="Decrement value"
+        onClick={() => dispatch(decrement())}
+      >
+        Decrement
+      </button>
+    </div>
+  );
 }
 
 export default App;

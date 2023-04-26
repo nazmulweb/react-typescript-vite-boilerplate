@@ -25,6 +25,7 @@
     "src",
     "./vite.config.ts",
     "./tailwind.config.js",
+    "./postcss.config.js",
     "**/*.ts",
     "**/*.tsx",
     "**/*.astro"
