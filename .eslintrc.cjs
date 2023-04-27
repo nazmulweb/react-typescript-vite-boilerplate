@@ -25,5 +25,6 @@ module.exports = {
     'react/button-has-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };

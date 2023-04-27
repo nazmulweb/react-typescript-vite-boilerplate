@@ -1,7 +1,7 @@
+/* eslint-disable import/no-cycle */
 /* eslint-disable react/button-has-type */
 import { useSelector, useDispatch } from 'react-redux';
 import { RouterProvider } from 'react-router-dom';
-// eslint-disable-next-line import/no-cycle
 import router from './view';
 import type { RootState } from './app/store';
 import { decrement, increment } from './counterSlice';
