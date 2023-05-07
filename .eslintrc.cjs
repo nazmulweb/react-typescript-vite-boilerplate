@@ -26,5 +26,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };
