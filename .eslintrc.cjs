@@ -23,5 +23,9 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-param-reassign ': 'off',
     'react/button-has-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };
