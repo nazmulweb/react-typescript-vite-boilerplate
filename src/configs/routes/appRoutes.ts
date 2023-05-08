@@ -11,7 +11,7 @@ const appsRoute: IAppRouteConfig[] = [
   {
     key: 'appsProject.dashboard',
     path: `/about`,
-    component: React.lazy(() => import('../../view/About')),
+    component: React.lazy(() => import('../../view/about/About')),
     authority: ['ADMIN', 'USER'],
   },
 ];
