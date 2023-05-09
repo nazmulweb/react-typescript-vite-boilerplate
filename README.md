@@ -70,7 +70,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 └── vite-env.d.ts
 ```
 
-main.tsx is entry point of the app
+main.tsx is the main entry point of the app
 
 ## Learn More
 
