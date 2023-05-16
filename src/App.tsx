@@ -5,6 +5,7 @@ import { RouterProvider } from 'react-router-dom';
 import router from './view';
 import type { RootState } from './app/store';
 import { decrement, increment } from './counterSlice';
+import { DatePicker } from 'antd';
 
 function App() {
   const count = useSelector((state: RootState) => state.counter.value);
@@ -26,6 +27,7 @@ function App() {
           Decrement
         </button>
       </div>
+      <DatePicker />;
       <RouterProvider router={router} />
     </>
   );
