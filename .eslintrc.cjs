@@ -1,19 +1,15 @@
 module.exports = {
-  env: { browser: true, es2020: true },
-  extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  env: {
+    browser: true,
+    es2020: true
+  },
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
+    project: './tsconfig.json'
   },
   plugins: ['react', '@typescript-eslint', 'react-refresh', 'prettier'],
   rules: {
@@ -26,6 +22,9 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'prettier/prettier': ['error', { endOfLine: 'auto' }],
-  },
+    'react/require-default-props': 'off'
+    'prettier/prettier': ['error', {
+      endOfLine: 'auto'
+    }]
+  }
 };
