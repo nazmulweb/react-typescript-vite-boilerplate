@@ -1,9 +1,10 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
 // eslint-disable-next-line import/extensions
+import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
+import store, { persistor } from './app';
 import App from './App';
-import { store } from './app/store';
 
 import './index.scss';
 
@@ -14,7 +15,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <PersistGate loading={null} persistor={persistor}>
+        <App />
+      </PersistGate>
     </Provider>
   </React.StrictMode>
 );

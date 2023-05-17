@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {},
   },
+  darkMode: 'class',
   // eslint-disable-next-line global-require
   plugins: [],
 };
