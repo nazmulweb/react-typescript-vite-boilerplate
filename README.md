@@ -106,3 +106,31 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 While working on this project please follow the below guidelines
 the [contributing guidelines](contributing/CONTRIBUTING.md).
+
+# Using Docker for development
+
+## Useful commands for development workflow
+
+##### If pulled for the first time or the package.json changed run
+
+`docker compose build`
+
+##### Then, run the following command to start the environment.
+
+`docker compose up -d`
+
+##### To see the logs of your app
+
+`docker compose logs -f web`
+
+##### To see and follow the logs of your tests
+
+`docker compose logs -f test`
+
+##### If you need to install any npm package.
+
+`docker compose exec web npm install pacakge-name`
+
+##### stop the containers
+
+`docker compose down`
