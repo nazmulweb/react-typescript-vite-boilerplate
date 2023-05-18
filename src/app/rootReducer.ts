@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import theme from './theme/themeSlice';
 
-interface rootReducer {
+interface RootReducerI {
   asyncReducers?: any;
 }
 
 const rootReducer =
-  (asyncReducers?: rootReducer) => (state: any, action: any) => {
+  (asyncReducers?: RootReducerI) => (state: any, action: any) => {
     const combinedReducer = combineReducers({
       theme,
       ...asyncReducers,

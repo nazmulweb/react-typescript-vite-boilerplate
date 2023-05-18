@@ -8,6 +8,14 @@ Required node version >=14.17.0
 
 In the project directory, you can run:
 
+### `npm run lint`
+
+Run the above command to check linter errors.<br />
+
+### `npm run storybook`
+
+To run the storybook.<br />
+
 ### `npm install`
 
 To install dependencies run the above command.<br />

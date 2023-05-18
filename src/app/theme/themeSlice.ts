@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { themeConfig } from '../../configs/theme.config';
 
-interface initialStateInterfase {
-  mode: String;
+interface InitialStateInterfase {
+  mode: string;
 }
 
-const initialState: initialStateInterfase = {
+const initialState: InitialStateInterfase = {
   mode: themeConfig.mode,
 };
 
