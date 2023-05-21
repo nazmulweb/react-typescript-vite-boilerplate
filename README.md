@@ -8,6 +8,14 @@ Required node version >=14.17.0
 
 In the project directory, you can run:
 
+### `npm run lint`
+
+Run the above command to check linter errors.<br />
+
+### `npm run storybook`
+
+To run the storybook.<br />
+
 ### `npm install`
 
 To install dependencies run the above command.<br />
@@ -106,3 +114,39 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 While working on this project please follow the below guidelines
 the [contributing guidelines](contributing/CONTRIBUTING.md).
+
+# Using Docker for development
+
+## Useful commands for development workflow
+
+##### If pulled for the first time or the package.json changed run
+
+`docker compose build`
+
+##### Then, run the following command to start the environment.
+
+`docker compose up -d`
+
+##### To see the logs of your app
+
+`docker compose logs -f web`
+
+##### To see and follow the logs of your tests
+
+`docker compose logs -f test`
+
+##### To run test
+
+`docker compose run --rm web npm run test`
+
+##### To see linter errors
+
+`docker compose run --rm web npm run lint`
+
+##### If you need to install any npm package.
+
+`docker compose exec web npm install pacakge-name`
+
+##### stop the containers
+
+`docker compose down`

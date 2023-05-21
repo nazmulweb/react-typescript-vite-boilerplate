@@ -8,14 +8,14 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "antd": "^5.5.0",
     "classnames": "^2.3.2",
-    "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.4",
     "framer-motion": "^10.12.9",
     "lodash": "^4.17.21",
@@ -24,6 +24,7 @@
     "react-icons": "^4.8.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.10.0",
+    "redux-persist": "^6.0.0",
     "use-immer": "^0.9.0"
   },
   "devDependencies": {
@@ -41,6 +42,7 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0-beta.0",
+    "@vitest/coverage-c8": "^0.31.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.39.0",
     "eslint-config-airbnb": "^19.0.4",
