@@ -1,16 +1,11 @@
 import { describe, it } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { Provider } from 'react-redux';
+import { screen } from '@testing-library/react';
 import Home from './Home';
-import store from '../app';
+import { renderWithProviders } from '../utils/test-utils';
 
 describe('Home', () => {
   it('Render hello workd', () => {
-    render(
-      <Provider store={store}>
-        <Home />
-      </Provider>
-    );
+    renderWithProviders(<Home />);
     expect(
       screen.getByRole('heading', {
         level: 1,

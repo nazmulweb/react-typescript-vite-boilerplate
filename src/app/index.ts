@@ -23,6 +23,12 @@ const store: any = configureStore({
   devTools: process.env.NODE_ENV === 'development',
 });
 
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>;
+export type AppStore = ReturnType<typeof store>;
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch;
+
 store.asyncReducers = {};
 export const persistor = persistStore(store);
 
