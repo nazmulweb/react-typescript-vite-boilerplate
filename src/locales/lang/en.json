@@ -1,0 +1,92 @@
+{
+  "greet": {
+    "goodMorning": "Good morning",
+    "afterNoon": "Good afternoon",
+    "noon": "Good morning",
+    "evening": "Good evening",
+    "night": "Good night",
+    "midNight": "It's midnight"
+  },
+
+  "fact": {
+    "title": "Did you know?"
+  },
+  "visit": {
+    "title": "Visit"
+  },
+  "event": {
+    "link": "Read more",
+    "title": "Upcoming events:"
+  },
+  "tax": {
+    "title": "To enjoy tax rebate on investment",
+    "note": "invest",
+    "subtitle": "after deducting PF"
+  },
+  "button": {
+    "last": "Last",
+    "previous": "Previous",
+    "next": "Next",
+    "download": "Download",
+    "top": "Top",
+    "home": "Back to home",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel"
+
+  },
+  "notification": {
+    "message": "You got a new notification!",
+    "tooltip": "Click to see notifications"
+  },
+  "search": {
+    "message": "Click to search"
+  },
+  "calendar": {
+    "year": "Year",
+    "month": "Month",
+    "day": "Day"
+  },
+   "placeholder": {
+    "year": "Select year",
+    "month": "Select month",
+    "day": "Select day",
+    "type": "Bonus type",
+    "loans": "Select your loan",
+     "start_date": "Start date",
+     "end_date": "End date",
+     "user": "Search Users",
+     "button": "Filter Search",
+     "message_one": "Click on a table row to see profile.",
+     "message_two": "Hold Mouse over any information to see full form.",
+     "message_three": "Scroll left to see full details of the table.",
+     "pin": "Pin",
+     "name": "Name",
+     "division": "Division",
+     "designation": "Designation",
+     "phone": "Phone",
+     "extension": "Extension",
+     "status": "Status",
+     "event": "No upcoming events",
+     "banner": "No banner to show",
+     "news": "No news to show",
+     "facts": "No facts to show",
+     "visit": "No data",
+     "slider": "No slider to show"
+
+
+  },
+  "title": {
+    "loans": "Your loans",
+    "bonus": "Bonus type"
+  },
+  "mobile": {
+    "notification": "Notification",
+    "menu": "Menu",
+    "home": "Home",
+    "user": "User"
+
+  }
+
+
+}

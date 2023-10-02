@@ -2,5 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.theme-color {
+html {
+  font-size: 62.5%; /* 10px ÷ 16px = 0.625 */
+}
+body {
+  font-size: 1.6rem;
+  font-family: 'Li Alinur Boisakh Unicode', 'Arial', Helvetica, sans-serif;
 }
