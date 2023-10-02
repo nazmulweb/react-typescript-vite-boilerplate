@@ -1,7 +1,13 @@
+import Home from './view/Home';
+
 function App() {
   return (
-    <div className="underline underline-offset-1">
-      এ কথা বলার পর তাঁর পরনের শাড়ির
+    <div
+      style={{
+        fontFamily: 'alinur',
+      }}
+    >
+      <Home />
     </div>
   );
 }

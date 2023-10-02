@@ -5,7 +5,20 @@
 html {
   font-size: 62.5%; /* 10px ÷ 16px = 0.625 */
 }
+
 body {
   font-size: 1.6rem;
-  font-family: 'Li Alinur Boisakh Unicode', 'Arial', Helvetica, sans-serif;
+  font-family: 'Helvetica-Neue', 'Arial', Helvetica, sans-serif;
+  // height: 100vh;
+  // width: 100vw;
+  // background: url(../public/border-bg.png) no-repeat;
+  // background-position: center;
+  // background-size: 100% 100%;
+}
+
+.bg-style {
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  position: relative;
 }

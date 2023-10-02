@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import theme from './theme/themeSlice';
+import game from './game/gameSlice';
 
 interface RootReducerI {
   asyncReducers?: any;
@@ -9,6 +10,7 @@ const rootReducer =
   (asyncReducers?: RootReducerI) => (state: any, action: any) => {
     const combinedReducer = combineReducers({
       theme,
+      game,
       ...asyncReducers,
     });
     return combinedReducer(state, action);
